@@ -60,7 +60,7 @@ public class bluetoothtransmit extends AppCompatActivity {
                     byte[] readbuf = (byte[]) msg_type.obj;
                     String string_recieved = new String(readbuf);
 
-                    //do some task based on recieved string
+                    //do some task based on received string
 
                     break;
                 case MESSAGE_WRITE:
@@ -138,7 +138,7 @@ public class bluetoothtransmit extends AppCompatActivity {
             finish();
         }
 
-        //Add these permisions before
+        //Add these permissions before
 //        <uses-permission android:name="android.permission.BLUETOOTH" />
 //        <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 //        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -245,7 +245,7 @@ public class bluetoothtransmit extends AppCompatActivity {
                 try {
                     mmSocket.close();
                 } catch (IOException closeException) { }
-                return;
+                //return;
             }
 
             // Do work to manage the connection (in a separate thread)
